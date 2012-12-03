@@ -10,22 +10,22 @@ public class Division {
 	
 	
 	private void run() throws Exception {
-		// Š„‚ç‚ê‚é”‚ÆŠ„‚é”‚ğ“Ç‚İ‚Ş
+		// å‰²ã‚‰ã‚Œã‚‹æ•°ã¨å‰²ã‚‹æ•°ã‚’èª­ã¿è¾¼ã‚€
 		BufferedReader reader =
 			new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("Š„‚ç‚ê‚é”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("å‰²ã‚‰ã‚Œã‚‹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		String dividendString = reader.readLine();
 		int dividend = Integer.parseInt(dividendString);
-		System.out.print("Š„‚é”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("å‰²ã‚‹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		String divisorString = reader.readLine();
 		int divisor = Integer.parseInt(divisorString);
 		
-		// ¤‚Æ—]‚ğŒvZ‚·‚é
+		// å•†ã¨ä½™ã‚’è¨ˆç®—ã™ã‚‹
 		int quotient = dividend / divisor;
 		int remainder = dividend % divisor;
 
-		// Š„‚èZ‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
-		System.out.print("¤‚Í" + quotient + "‚Å—]‚Í" + remainder + "‚Å‚·");
+		// å‰²ã‚Šç®—ã®çµæœã‚’è¡¨ç¤ºã™ã‚‹
+		System.out.print("å•†ã¯" + quotient + "ã§ä½™ã¯" + remainder + "ã§ã™");
 	}
 
 }

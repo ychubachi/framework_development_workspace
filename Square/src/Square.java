@@ -8,12 +8,12 @@ public class Square {
 	}
 
 	private void run() throws Exception {
-		System.out.print("©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		BufferedReader reader =
 			new BufferedReader(
 				new InputStreamReader(System.in));
 		String valueString = reader.readLine();
 		double value = Double.parseDouble(valueString);
-		System.out.println("ŒvZŒ‹‰ÊF" + (value * value));
+		System.out.println("è¨ˆç®—çµæœï¼š" + (value * value));
 	}
 }

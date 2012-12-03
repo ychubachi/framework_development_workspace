@@ -5,7 +5,7 @@ import framework.process.Output;
 import framework.process.Process;
 
 public class SquareProcess implements Process {
-	// ©æ‚ğŒvZ‚·‚é
+	// è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹
 	public Output process(Input input) {
 		ValueToBeSquared vtbs =(ValueToBeSquared) input;
 		SquaredValue output = new SquaredValue();

@@ -9,16 +9,16 @@ public class Square {
 	}
 
 	private void run() throws Exception {
-		// ©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚·‚é
+		// è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã™ã‚‹
 		double value = input();
-		// ©æ‚ğŒvZ‚·‚é
+		// è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹
 		double result = process(value);
-		// ŒvZŒ‹‰Ê‚ğo—Í‚·‚é
+		// è¨ˆç®—çµæœã‚’å‡ºåŠ›ã™ã‚‹
 		output(result);
 	}
 
 	private double input() throws IOException {
-		System.out.print("©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		BufferedReader reader =
 			new BufferedReader(
 				new InputStreamReader(System.in));
@@ -33,6 +33,6 @@ public class Square {
 	}
 
 	private void output(double result) {
-		System.out.println("ŒvZŒ‹‰ÊF" + result);
+		System.out.println("è¨ˆç®—çµæœï¼š" + result);
 	}
 }

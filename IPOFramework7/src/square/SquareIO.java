@@ -8,10 +8,10 @@ import framework.InputAndOutput;
 import framework.Output;
 
 public class SquareIO implements InputAndOutput {
-	// ©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚·‚é
+	// è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã™ã‚‹
 	public Input input() throws IOException {
 		ValueToBeSquared input = new ValueToBeSquared();
-		System.out.print("©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		BufferedReader reader =
 			new BufferedReader(
 				new InputStreamReader(System.in));
@@ -20,9 +20,9 @@ public class SquareIO implements InputAndOutput {
 		return input;
 	}
 
-	// ŒvZŒ‹‰Ê‚ğo—Í‚·‚é
+	// è¨ˆç®—çµæœã‚’å‡ºåŠ›ã™ã‚‹
 	public void output(Output output) {
 		SquaredValue sv = (SquaredValue) output;
-		System.out.println("ŒvZŒ‹‰ÊF" + sv.result);
+		System.out.println("è¨ˆç®—çµæœï¼š" + sv.result);
 	}
 }

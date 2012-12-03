@@ -16,21 +16,21 @@ public class Division {
 		output(output);
 	}
 
-	// Š„‚ç‚ê‚é”‚ÆŠ„‚é”‚ğ“Ç‚İ‚Ş
+	// å‰²ã‚‰ã‚Œã‚‹æ•°ã¨å‰²ã‚‹æ•°ã‚’èª­ã¿è¾¼ã‚€
 	private Input input() throws IOException {
 		DividendAndDivisor input = new DividendAndDivisor();
 		BufferedReader reader =
 			new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("Š„‚ç‚ê‚é”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("å‰²ã‚‰ã‚Œã‚‹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		String dividendString = reader.readLine();
 		input.dividend = Integer.parseInt(dividendString);
-		System.out.print("Š„‚é”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("å‰²ã‚‹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		String divisorString = reader.readLine();
 		input.divisor = Integer.parseInt(divisorString);
 		return input;
 	}
 
-	// ¤‚Æ—]‚ğŒvZ‚·‚é
+	// å•†ã¨ä½™ã‚’è¨ˆç®—ã™ã‚‹
 	private Output process(Input input) {
 		DividendAndDivisor dad = (DividendAndDivisor) input;
 		QuotientAndRemainder output = new QuotientAndRemainder();
@@ -39,9 +39,9 @@ public class Division {
 		return output;
 	}
 
-	// Š„‚èZ‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
+	// å‰²ã‚Šç®—ã®çµæœã‚’è¡¨ç¤ºã™ã‚‹
 	private void output(Output output) {
 		QuotientAndRemainder qar = (QuotientAndRemainder) output;
-		System.out.print("¤‚Í" + qar.quotient + "‚Å—]‚Í" + qar.remainder + "‚Å‚·");
+		System.out.print("å•†ã¯" + qar.quotient + "ã§ä½™ã¯" + qar.remainder + "ã§ã™");
 	}
 }

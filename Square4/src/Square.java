@@ -8,20 +8,20 @@ public class Square {
 	}
 
 	private void run() throws Exception {
-		// ©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚·‚é
+		// è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã™ã‚‹
 		ValueToBeSquared input = new ValueToBeSquared();
-		System.out.print("©æ‚ğŒvZ‚·‚é’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹å€¤ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		BufferedReader reader =
 			new BufferedReader(
 				new InputStreamReader(System.in));
 		String valueString = reader.readLine();
 		input.value = Double.parseDouble(valueString);
 		
-		// ©æ‚ğŒvZ‚·‚é
+		// è‡ªä¹—ã‚’è¨ˆç®—ã™ã‚‹
 		SquaredValue output = new SquaredValue();
 		output.result = input.value * input.value;
 		
-		// ŒvZŒ‹‰Ê‚ğo—Í‚·‚é
-		System.out.println("ŒvZŒ‹‰ÊF" + output.result);
+		// è¨ˆç®—çµæœã‚’å‡ºåŠ›ã™ã‚‹
+		System.out.println("è¨ˆç®—çµæœï¼š" + output.result);
 	}
 }

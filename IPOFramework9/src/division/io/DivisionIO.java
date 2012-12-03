@@ -12,22 +12,22 @@ import framework.process.Output;
 
 
 public class DivisionIO implements InputAndOutput {
-	// Š„‚ç‚ê‚é”‚ÆŠ„‚é”‚ğ“Ç‚İ‚Ş
+	// å‰²ã‚‰ã‚Œã‚‹æ•°ã¨å‰²ã‚‹æ•°ã‚’èª­ã¿è¾¼ã‚€
 	public void input(Input input) throws IOException {
 		DividendAndDivisor dad = (DividendAndDivisor) input;
 		BufferedReader reader =
 			new BufferedReader(new InputStreamReader(System.in));
-		System.out.print("Š„‚ç‚ê‚é”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("å‰²ã‚‰ã‚Œã‚‹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		String dividendString = reader.readLine();
 		dad.setDividend(Integer.parseInt(dividendString));
-		System.out.print("Š„‚é”‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
+		System.out.print("å‰²ã‚‹æ•°ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„ï¼š");
 		String divisorString = reader.readLine();
 		dad.setDivisor(Integer.parseInt(divisorString));
 	}
 
-	// Š„‚èZ‚ÌŒ‹‰Ê‚ğ•\¦‚·‚é
+	// å‰²ã‚Šç®—ã®çµæœã‚’è¡¨ç¤ºã™ã‚‹
 	public void output(Output output) {
 		QuotientAndRemainder qar = (QuotientAndRemainder) output;
-		System.out.print("¤‚Í" + qar.getQuotient() + "‚Å—]‚Í" + qar.getRemainder() + "‚Å‚·");
+		System.out.print("å•†ã¯" + qar.getQuotient() + "ã§ä½™ã¯" + qar.getRemainder() + "ã§ã™");
 	}
 }

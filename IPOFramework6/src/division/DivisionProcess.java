@@ -6,7 +6,7 @@ import framework.Process;
 
 
 public class DivisionProcess implements Process {
-	// ¤‚Æ—]‚ğŒvZ‚·‚é
+	// å•†ã¨ä½™ã‚’è¨ˆç®—ã™ã‚‹
 	public Output process(Input input) {
 		DividendAndDivisor dad = (DividendAndDivisor) input;
 		QuotientAndRemainder output = new QuotientAndRemainder();
