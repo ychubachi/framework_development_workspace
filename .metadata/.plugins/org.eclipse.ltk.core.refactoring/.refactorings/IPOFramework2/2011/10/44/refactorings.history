@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring abstract="0" comment="Pull up &apos;Division.run()&apos; from &apos;Division&apos; to &apos;Framework&apos;&#x0D;&#x0A;- Original project: &apos;IPOFramework2&apos;&#x0D;&#x0A;- Original element: &apos;Division.run()&apos;&#x0D;&#x0A;- Destination type: &apos;Framework&apos;&#x0D;&#x0A;- Use super type where possible" delete="2" description="Pull up &apos;run()&apos; to &apos;Framework&apos;" element1="/src&lt;{Division.java[Division~run" element2="/src&lt;{Division.java[Division~run" element3="/src&lt;{Square.java[Square~run" flags="589830" id="org.eclipse.jdt.ui.pull.up" input="/src&lt;{Framework.java[Framework" instanceof="false" pull="1" replace="true" stamp="1319450690752" stubs="true" version="1.0"/>
-</session>
