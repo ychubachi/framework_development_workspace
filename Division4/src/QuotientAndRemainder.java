@@ -1,5 +1,5 @@
 
-class QuotientAndRemainder implements Output {
+class QuotientAndRemainder {
 	int quotient;
 	int remainder;
 }

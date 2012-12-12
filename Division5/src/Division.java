@@ -11,15 +11,13 @@ public class Division {
 	
 	
 	private void run() throws Exception {
-		// 割られる数と割る数を読み込む
-		DividendAndDivisor input = input();
-		// 商と余を計算する
-		QuotientAndRemainder output = process(input);
-		// 割り算の結果を表示する
+		Input input = input();
+		Output output = process(input);
 		output(output);
 	}
 
-	private DividendAndDivisor input() throws IOException {
+	// 割られる数と割る数を読み込む
+	private Input input() throws IOException {
 		DividendAndDivisor input = new DividendAndDivisor();
 		BufferedReader reader =
 			new BufferedReader(new InputStreamReader(System.in));
@@ -32,14 +30,18 @@ public class Division {
 		return input;
 	}
 
-	private QuotientAndRemainder process(DividendAndDivisor input) {
+	// 商と余を計算する
+	private Output process(Input input) {
+		DividendAndDivisor dad = (DividendAndDivisor) input;
 		QuotientAndRemainder output = new QuotientAndRemainder();
-		output.quotient = input.dividend / input.divisor;
-		output.remainder = input.dividend % input.divisor;
+		output.quotient = dad.dividend / dad.divisor;
+		output.remainder = dad.dividend % dad.divisor;
 		return output;
 	}
 
-	private void output(QuotientAndRemainder output) {
-		System.out.print("商は" + output.quotient + "で余は" + output.remainder + "です");
+	// 割り算の結果を表示する
+	private void output(Output output) {
+		QuotientAndRemainder qar = (QuotientAndRemainder) output;
+		System.out.print("商は" + qar.quotient + "で余は" + qar.remainder + "です");
 	}
 }

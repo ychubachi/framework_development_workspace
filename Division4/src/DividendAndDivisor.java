@@ -1,5 +1,5 @@
 
-class DividendAndDivisor implements Input {
+class DividendAndDivisor {
 	int dividend;
 	int divisor;
 }

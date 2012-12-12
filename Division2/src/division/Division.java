@@ -1,13 +1,13 @@
+package division;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 
 public class Division {
 	public static void main(String[] args) throws Exception {
 		Division division = new Division();
 		division.run();
 	}
-	
 	
 	private void run() throws Exception {
 		// 割られる数と割る数を読み込む
@@ -27,5 +27,4 @@ public class Division {
 		// 割り算の結果を表示する
 		System.out.print("商は" + quotient + "で余は" + remainder + "です");
 	}
-
 }
