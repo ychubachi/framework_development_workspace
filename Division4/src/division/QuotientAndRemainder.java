@@ -1,3 +1,4 @@
+package division;
 
 class QuotientAndRemainder {
 	int quotient;
