@@ -27,6 +27,7 @@ public class Division {
 		output.remainder = input.dividend % input.divisor;
 
 		// 割り算の結果を表示する
-		System.out.print("商は" + output.quotient + "で余は" + output.remainder + "です");
+		System.out.print("商は" + output.quotient
+				+ "で余は" + output.remainder + "です");
 	}
 }

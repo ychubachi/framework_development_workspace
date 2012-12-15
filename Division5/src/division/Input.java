@@ -1,5 +1,0 @@
-package division;
-
-interface Input {
-
-}

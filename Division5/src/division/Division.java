@@ -3,6 +3,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import framework.Input;
+import framework.Output;
+
 
 public class Division {
 	public static void main(String[] args) throws Exception {
