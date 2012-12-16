@@ -1,18 +1,15 @@
-package division;
+package division; // このあとに改行を入れたい
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
 import framework.Input;
 import framework.Output;
-
 
 public class Division {
 	public static void main(String[] args) throws Exception {
 		Division division = new Division();
 		division.run();
 	}
-	
 	
 	private void run() throws Exception {
 		Input input = input();
@@ -46,6 +43,7 @@ public class Division {
 	// 割り算の結果を表示する
 	private void output(Output output) {
 		QuotientAndRemainder qar = (QuotientAndRemainder) output;
-		System.out.print("商は" + qar.quotient + "で余は" + qar.remainder + "です");
+		System.out.print("商は" + qar.quotient
+				+ "で余は" + qar.remainder + "です");
 	}
 }
