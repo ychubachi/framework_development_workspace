@@ -1,4 +1,5 @@
-package division; // このあとに改行を入れたい
+package division;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
